@@ -1,0 +1,17 @@
+server:
+  port: 8111
+  servlet:
+    context-path: /
+openai-service:
+  api-key: --
+  gpt-model: gpt-3.5-turbo
+  audio-model: whisper-1
+  http-client:
+    read-timeout: 30000
+    connect-timeout: 30000
+  urls:
+    base-url: https://api.openai.com/v1
+    model-url: /models
+    chat-url: /chat/completions
+    create-transcription-url: /audio/transcriptions
+    img-generation-url: /images/generations

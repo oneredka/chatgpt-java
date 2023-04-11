@@ -1,0 +1,15 @@
+package com.example.javachatgpt;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.openfeign.EnableFeignClients;
+
+@EnableFeignClients
+@SpringBootApplication
+public class JavaChatGptApplication {
+
+    public static void main(String[] args) {
+        SpringApplication.run(JavaChatGptApplication.class, args);
+    }
+
+}
